@@ -1,0 +1,167 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|c:\\users\\ermur\\onedrive\\masa\u00FCst\u00FC\\pansiyon\\pansiyon\\hizmetler_islem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|solutionrelative:pansiyon\\hizmetler_islem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|c:\\users\\ermur\\onedrive\\masa\u00FCst\u00FC\\pansiyon\\pansiyon\\hizmetler_islem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|solutionrelative:pansiyon\\hizmetler_islem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|c:\\users\\ermur\\onedrive\\masa\u00FCst\u00FC\\pansiyon\\pansiyon\\sabit_veriler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|solutionrelative:pansiyon\\sabit_veriler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|c:\\users\\ermur\\onedrive\\masa\u00FCst\u00FC\\pansiyon\\pansiyon\\sql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|solutionrelative:pansiyon\\sql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|c:\\users\\ermur\\onedrive\\masa\u00FCst\u00FC\\pansiyon\\pansiyon\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|solutionrelative:pansiyon\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|c:\\users\\ermur\\onedrive\\masa\u00FCst\u00FC\\pansiyon\\pansiyon\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|solutionrelative:pansiyon\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|c:\\users\\ermur\\onedrive\\masa\u00FCst\u00FC\\pansiyon\\pansiyon\\musteri_duzenleme.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|solutionrelative:pansiyon\\musteri_duzenleme.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|c:\\users\\ermur\\onedrive\\masa\u00FCst\u00FC\\pansiyon\\pansiyon\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|solutionrelative:pansiyon\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|c:\\users\\ermur\\onedrive\\masa\u00FCst\u00FC\\pansiyon\\pansiyon\\pansiyon.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DE6C0E3C-7401-4DC8-9074-223FB696C113}|Pansiyon\\Pansiyon.csproj|solutionrelative:pansiyon\\pansiyon.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "hizmetler_islem.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\hizmetler_islem.xaml.cs",
+              "RelativeDocumentMoniker": "Pansiyon\\hizmetler_islem.xaml.cs",
+              "ToolTip": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\hizmetler_islem.xaml.cs",
+              "RelativeToolTip": "Pansiyon\\hizmetler_islem.xaml.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwBoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T20:54:08.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Pansiyon\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\MainWindow.xaml",
+              "RelativeToolTip": "Pansiyon\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-15T20:54:08.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "hizmetler_islem.xaml",
+              "DocumentMoniker": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\hizmetler_islem.xaml",
+              "RelativeDocumentMoniker": "Pansiyon\\hizmetler_islem.xaml",
+              "ToolTip": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\hizmetler_islem.xaml",
+              "RelativeToolTip": "Pansiyon\\hizmetler_islem.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-15T20:54:08.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "sabit_veriler.cs",
+              "DocumentMoniker": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\sabit_veriler.cs",
+              "RelativeDocumentMoniker": "Pansiyon\\sabit_veriler.cs",
+              "ToolTip": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\sabit_veriler.cs",
+              "RelativeToolTip": "Pansiyon\\sabit_veriler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T20:54:08.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "sql.cs",
+              "DocumentMoniker": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\sql.cs",
+              "RelativeDocumentMoniker": "Pansiyon\\sql.cs",
+              "ToolTip": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\sql.cs",
+              "RelativeToolTip": "Pansiyon\\sql.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T20:54:08.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Pansiyon\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Pansiyon\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAL4BAAAAAAAAAAAowDoCAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T20:54:08.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "musteri_duzenleme.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\musteri_duzenleme.xaml.cs",
+              "RelativeDocumentMoniker": "Pansiyon\\musteri_duzenleme.xaml.cs",
+              "ToolTip": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\musteri_duzenleme.xaml.cs",
+              "RelativeToolTip": "Pansiyon\\musteri_duzenleme.xaml.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAkwC4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T20:54:08.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\App.config",
+              "RelativeDocumentMoniker": "Pansiyon\\App.config",
+              "ToolTip": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\App.config",
+              "RelativeToolTip": "Pansiyon\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-15T20:54:08.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Pansiyon.csproj",
+              "DocumentMoniker": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\Pansiyon.csproj",
+              "RelativeDocumentMoniker": "Pansiyon\\Pansiyon.csproj",
+              "ToolTip": "C:\\Users\\ermur\\OneDrive\\Masa\u00FCst\u00FC\\Pansiyon\\Pansiyon\\Pansiyon.csproj",
+              "RelativeToolTip": "Pansiyon\\Pansiyon.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-15T20:54:08.98Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

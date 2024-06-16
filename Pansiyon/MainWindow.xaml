@@ -1,0 +1,322 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pansiyon" x:Class="Pansiyon.MainWindow"
+        mc:Ignorable="d"
+        Title="Pansiyon" Height="800" Width="1200" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="ThreeDBorderWindow" Background="#FFE6E6E6">
+    <DockPanel LastChildFill="False">
+        <TabControl x:Name="tab_control" Width="1200" SelectionChanged="TabControl_SelectionChanged" BorderBrush="#FF53B4FF" Background="White">
+            <TabItem Header="Yeni Kayıt">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="38*"/>
+                        <ColumnDefinition Width="559*"/>
+                    </Grid.ColumnDefinitions>
+                    <DockPanel Grid.ColumnSpan="2">
+                        <WrapPanel DockPanel.Dock="Left" Width="300" Margin="0,0,876,0" Orientation="Vertical" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" HorizontalAlignment="Left">
+                            <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+                                <Label Content="Tc Kimlik Numarası: " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+                                <TextBox Name="k_tc_no" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="18" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030"/>
+                            </Grid>
+                            <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+                                <Label Content="Adi : " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+                                <TextBox Name="k_adi" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="18" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030"/>
+                            </Grid>
+                            <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+                                <Label Content="Soyadi : " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+                                <TextBox Name="k_soyadi" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="18" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030"/>
+                            </Grid>
+                            <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+                                <Label Content="Cep Telefonu : " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+                                <TextBox Name="k_cep_no" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="18" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030"/>
+                            </Grid>
+                            <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+                                <Label Content="Giriş Tarihi: " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+                                <DatePicker Name="k_giris_tarihi" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="24" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030" DataContextChanged="k_giris_tarihi_DataContextChanged" CalendarClosed="k_giris_tarihi_CalendarClosed"/>
+                            </Grid>
+                            <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="101*"/>
+                                    <ColumnDefinition Width="34*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Content="Çıkış Tarihi: " Width="110" Margin="0,0,92,0" Foreground="Black" FontWeight="Normal"/>
+                                <DatePicker Name="k_cikis_tarihi" Background="{x:Null}" Margin="110,1,0,1" Width="160" Height="24" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030" DataContextChanged="DatePicker_DataContextChanged" Grid.ColumnSpan="2" CalendarClosed="k_cikis_tarihi_CalendarClosed"/>
+                            </Grid>
+                            <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+                                <Label Content="Adres : " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+                                <TextBox Name="k_adres" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="18" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030"/>
+                            </Grid>
+                            <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+                                <Label Content="Açıklama: " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+                                <RichTextBox Name="k_aciklama" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="200" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030"/>
+
+                            </Grid>
+                            <Button Name="kaydet" Width="220" Height="25" Margin="0,50,0,0" Content="Kaydet" Background="{x:Null}" BorderThickness="0,0,0,3" BorderBrush="#FF2B66DC" Foreground="#FF0C0C0C" Click="kaydet_Click"></Button>
+                            <Button Name="kaydet_temizle" Width="220" Height="25" Margin="0,10,0,0" Content="Kaydet Ve Temizle" Background="{x:Null}" BorderThickness="0,0,0,3" BorderBrush="#FF2B66DC" Foreground="#FF0C0C0C" Click="kaydet_temizle_Click"></Button>
+                            <Button Name="temizle" Width="220" Height="25" Margin="0,10,0,0" Content="Temizle"  Background="{x:Null}" BorderThickness="0,0,0,3" BorderBrush="#FF2B66DC" Foreground="#FF0C0C0C" Click="temizle_Click"></Button>
+                        </WrapPanel>
+
+
+                        <UniformGrid DockPanel.Dock="Right"  Background="White" Width="880" Margin="-880,0,0,0" >
+                            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"  >
+                                <WrapPanel  Name="odalar"  Background="White" Width="880" HorizontalAlignment="Left" VerticalAlignment="Top" >
+
+                                </WrapPanel>
+                            </ScrollViewer>
+                        </UniformGrid>
+
+
+
+
+
+                    </DockPanel>
+
+
+
+                </Grid>
+
+
+            </TabItem>
+       
+            
+            <TabItem Header="Müşteri Bilgileri" Loaded="TabItem_Loaded">
+                <Grid Background="#FFE5E5E5">
+                    <DockPanel>
+                        <WrapPanel DockPanel.Dock="Top" Width="1180"  Orientation="Vertical" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" >
+                            <TextBox x:Name="arama_text" Width="1126" Margin="25,0,0,0" MouseEnter="TextBox_MouseEnter" AutomationProperties.HelpText="Arama" Text="Arama" MouseDoubleClick="arama_text_MouseDoubleClick" TextChanged="arama_text_TextChanged"/>
+                        </WrapPanel>
+
+                        <WrapPanel DockPanel.Dock="Bottom" Width="1180"  Orientation="Vertical" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" >
+                            <Button Width="1172" Margin="0,0,0,0" Content="Yenile" Click="Button_Click"/>
+                        </WrapPanel>
+
+                        <WrapPanel  Width="1180"  Orientation="Vertical" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+                            <DataGrid Width="1180" Height="710" Name="m_ekrani" SelectionChanged="m_ekrani_SelectionChanged" />
+                        </WrapPanel>
+                    </DockPanel>
+
+
+                </Grid>
+
+            </TabItem>
+           
+            <TabItem Header="Hizmetler" Margin="0,0,1,0" Height="22" VerticalAlignment="Center">
+                <Grid Background="#FFE5E5E5"  Height="755">
+                    <WrapPanel Orientation="Vertical" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Margin="0,0,0,0">
+                        <Grid Width="793" Height="690" >
+                            <UniformGrid Width="793" Margin="0,0,0,0" Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}" Height="690">
+                                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" BorderBrush="Black" Background="White"  >
+                                    <WrapPanel  Name="odalar_hizmet"  Background="White" Width="793" Height="690" HorizontalAlignment="Left" VerticalAlignment="Top" >
+
+                                    </WrapPanel>
+                                </ScrollViewer>
+                            </UniformGrid>
+                        </Grid>
+                        <Grid Width="400" Height="690" >
+                            <DockPanel>
+                                <RichTextBox DockPanel.Dock="Top" Name="on_izle" Width="400" Height="280" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}" BorderBrush="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}" BorderThickness="10,1,1,1" Margin="0,0,0,0"></RichTextBox>
+                                <UniformGrid DockPanel.Dock="Bottom" Width="400" Margin="0,0,0,0" Background="White" Height="410" >
+                                    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" BorderBrush="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" BorderThickness="10,0,0,0"  >
+                                        <WrapPanel Height="410" Name="aktif_hizmetler"  Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Width="400" HorizontalAlignment="Left" VerticalAlignment="Top" >
+
+                                        </WrapPanel>
+                                    </ScrollViewer>
+                                </UniformGrid>
+
+
+                            </DockPanel>
+                        </Grid>
+
+                        
+                    </WrapPanel>
+                    <Button Name="hizmet_degistir" Height="30" Margin="0,660,0,0" Content="Ekle / Kaldır" Width="1200" FontSize="18" FontWeight="Normal" Click="hizmet_degistir_Click"></Button>
+
+
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="Müşteri Çıkışı">
+                <Grid Background="#FFE5E5E5">
+
+                    <DockPanel>
+
+
+                        <WrapPanel DockPanel.Dock="Bottom" Width="1180"  Orientation="Vertical" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Height="30">
+                            <Button Width="100" Margin="0,0,0,0" Content="Yenile" Height="30" Click="Button_Click_1"/>
+                            <Button Width="1072" Margin="0,0,0,0" Content="Çıkış Yap" Height="30" Click="Button_Click_2"/>
+
+                        </WrapPanel>
+
+                        <WrapPanel  Width="1180"  Orientation="Vertical" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+                            <UniformGrid DockPanel.Dock="Bottom" Width="880" Margin="0,0,0,0" Background="White" Height="720" >
+                                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" BorderBrush="Black"  Background="White"  >
+                                    <WrapPanel  Name="cikis_yapılabilcek_odalar"  Background="White" Width="880" HorizontalAlignment="Left" VerticalAlignment="Top" >
+
+                                    </WrapPanel>
+                                </ScrollViewer>
+                            </UniformGrid>
+                            <RichTextBox Height="720" Width="300" Name="cikis_onizleme"></RichTextBox>
+                        </WrapPanel>
+                       
+
+
+
+                    </DockPanel>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Gelir" Width="50">
+                <Grid Background="#FFE5E5E5">
+                    <DockPanel>
+                        <WrapPanel DockPanel.Dock="Top" Width="1180"  Orientation="Vertical" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" >
+                            <TextBox x:Name="ge_arama_text" Width="1126" Margin="25,0,0,0" AutomationProperties.HelpText="Arama" Text="Arama" TextChanged="ge_arama_text_TextChanged"/>
+                        </WrapPanel>
+
+                        <WrapPanel DockPanel.Dock="Bottom" Width="1180"  Orientation="Vertical" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" >
+                            <Button Width="1172" Margin="0,0,0,0" Content="Yenile" Click="Button_Click_4"/>
+                        </WrapPanel>
+
+                        <WrapPanel  Width="1180"  Orientation="Vertical" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+                            <DataGrid Width="1180" Height="710" Name="ge_m_ekrani" />
+                        </WrapPanel>
+                    </DockPanel>
+
+
+                </Grid>
+
+            </TabItem>
+
+            <TabItem Header="Servis Ayarları">
+                <Grid Background="#FFE5E5E5">
+
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="38*"/>
+                        <ColumnDefinition Width="559*"/>
+                    </Grid.ColumnDefinitions>
+                    <DockPanel Grid.ColumnSpan="2">
+                        <WrapPanel DockPanel.Dock="Left" Width="300" Margin="0,0,876,0" Orientation="Vertical" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" HorizontalAlignment="Left">
+                            <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+                                <Label Content="Servis Adı: " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+                                <TextBox Name="s_servis_adi" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="18" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030"/>
+                            </Grid>
+                            <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+                                <Label Content="Servis Ücreti : " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+                                <TextBox Name="s_servis_ucreti" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="18" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030"/>
+                            </Grid>
+                            <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+                                <Label Content="Servis Açıklaması: " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+                                <RichTextBox Name="s_servis_aciklamasi" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="200" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030"/>
+
+                            </Grid>
+                            
+                            
+                            <Button Name="s_Ekle" Width="220" Height="25" Margin="0,50,0,0" Content="Ekle" Background="{x:Null}" BorderThickness="0,0,0,3" BorderBrush="#FF2B66DC" Foreground="#FF0C0C0C" Click="s_Ekle_Click"/>
+                            <Button Name="s_Değiştir" Width="220" Height="25" Margin="0,10,0,0" Content="Güncelle" Background="{x:Null}" BorderThickness="0,0,0,3" BorderBrush="#FF2B66DC" Foreground="#FF0C0C0C" Click="s_Değiştir_Click"/>
+                            <Button Name="s_Sil" Width="220" Height="25" Margin="0,10,0,0" Content="Sil"  Background="{x:Null}" BorderThickness="0,0,0,3" BorderBrush="#FF2B66DC" Foreground="#FF0C0C0C" Click="s_Sil_Click"/>
+                            <Button Name="s_Yenile" Width="220" Height="25" Margin="0,50,0,0" Content="Sayfayı Yenile"  Background="{x:Null}" BorderThickness="0,0,0,3" BorderBrush="#FF2B66DC" Foreground="#FF0C0C0C" Click="s_Yenile_Click"/>
+
+                        </WrapPanel>
+
+
+                        <UniformGrid DockPanel.Dock="Right"  Background="White" Width="880" Margin="-880,0,0,0" >
+                            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"  >
+                                <WrapPanel  Name="s_servisler"  Background="White" Width="880" HorizontalAlignment="Left" VerticalAlignment="Top" >
+
+                                </WrapPanel>
+                            </ScrollViewer>
+                        </UniformGrid>
+
+
+
+
+
+                    </DockPanel>
+
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Oda Ayarları">
+                <Grid Background="#FFE5E5E5">
+
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="38*"/>
+                        <ColumnDefinition Width="559*"/>
+                    </Grid.ColumnDefinitions>
+                    <DockPanel Grid.ColumnSpan="2">
+                        <WrapPanel DockPanel.Dock="Left" Width="300" Margin="0,0,876,0" Orientation="Vertical" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" HorizontalAlignment="Left">
+                            <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+                                <Label Content="Oda Adı: " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+                                <TextBox Name="o_oda_adi" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="18" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030"/>
+                            </Grid>
+                            <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+                                <Label Content="Kalabilcek Kişi Sayısı : " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+                                <TextBox Name="o_oda_kisi" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="18" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030"/>
+                            </Grid>
+                            <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+                                <Label Content="24 Saatlik Ücret : " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+                                <TextBox Name="o_oda_ucreti" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="18" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030"/>
+                            </Grid>
+                            <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+                                <Label Content="Oda Açıklaması: " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+                                <RichTextBox Name="o_oda_aciklamasi" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="200" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030"/>
+
+                            </Grid>
+
+
+                            <Button Name="o_Ekle" Width="220" Height="25" Margin="0,50,0,0" Content="Ekle" Background="{x:Null}" BorderThickness="0,0,0,3" BorderBrush="#FF2B66DC" Foreground="#FF0C0C0C" Click="o_Ekle_Click"/>
+                            <Button Name="o_Değiştir" Width="220" Height="25" Margin="0,10,0,0" Content="Güncelle" Background="{x:Null}" BorderThickness="0,0,0,3" BorderBrush="#FF2B66DC" Foreground="#FF0C0C0C" Click="o_Değiştir_Click"/>
+                            <Button Name="o_Sil" Width="220" Height="25" Margin="0,10,0,0" Content="Sil"  Background="{x:Null}" BorderThickness="0,0,0,3" BorderBrush="#FF2B66DC" Foreground="#FF0C0C0C" Click="o_Sil_Click"/>
+                            <Button Name="o_Yenile" Width="220" Height="25" Margin="0,50,0,0" Content="Sayfayı Yenile"  Background="{x:Null}" BorderThickness="0,0,0,3" BorderBrush="#FF2B66DC" Foreground="#FF0C0C0C" Click="o_Yenile_Click"/>
+
+                        </WrapPanel>
+
+
+                        <UniformGrid DockPanel.Dock="Right"  Background="White" Width="880" Margin="-880,0,0,0" >
+                            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"  >
+                                <WrapPanel  Name="o_ayarlar_odalar"  Background="White" Width="880" HorizontalAlignment="Left" VerticalAlignment="Top" >
+
+                                </WrapPanel>
+                            </ScrollViewer>
+                        </UniformGrid>
+
+
+
+
+
+                    </DockPanel>
+
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Arşiv" Loaded="TabItem_Loaded">
+                <Grid Background="#FFE5E5E5">
+                    <DockPanel>
+                        <WrapPanel DockPanel.Dock="Top" Width="1180"  Orientation="Vertical" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" >
+                            <TextBox x:Name="g_arama_text" Width="1126" Margin="25,0,0,0" AutomationProperties.HelpText="Arama" Text="Arama" TextChanged="g_arama_text_TextChanged"/>
+                        </WrapPanel>
+
+                        <WrapPanel DockPanel.Dock="Bottom" Width="1180"  Orientation="Vertical" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" >
+                            <Button Width="1172" Margin="0,0,0,0" Content="Yenile" Click="Button_Click_3"/>
+                        </WrapPanel>
+
+                        <WrapPanel  Width="1180"  Orientation="Vertical" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+                            <DataGrid Width="1180" Height="710" Name="g_m_ekrani" />
+                        </WrapPanel>
+                    </DockPanel>
+
+
+                </Grid>
+
+            </TabItem>
+            <Grid/>
+        </TabControl>
+    </DockPanel>
+
+
+</Window>

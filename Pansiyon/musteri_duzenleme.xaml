@@ -1,0 +1,59 @@
+﻿<Window x:Class="Pansiyon.musteri_duzenleme"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pansiyon"
+        mc:Ignorable="d"
+        Title="Müşteri Düzenleme" Height="400" Width="640" Loaded="Window_Loaded" ResizeMode="NoResize" Closing="Window_Closing">
+
+    <WrapPanel Orientation="Vertical" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" >
+        <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+            <Label Content="Tc Kimlik Numarası: " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+            <TextBox Name="k_tc_no" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="18" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030"/>
+        </Grid>
+        <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+            <Label Content="Adi : " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+            <TextBox Name="k_adi" Margin="110,-0,-0,-0" Width="160" Height="18" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF403636" OpacityMask="#FF564040" HorizontalAlignment="Stretch">
+                <TextBox.Background>
+                    <ImageBrush/>
+                </TextBox.Background>
+            </TextBox>
+        </Grid>
+        <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+            <Label Content="Soyadi : " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+            <TextBox Name="k_soyadi" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="18" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030"/>
+        </Grid>
+        <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+            <Label Content="Cep Telefonu : " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+            <TextBox Name="k_cep_no" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="18" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030"/>
+        </Grid>
+        <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+            <Label Content="Giriş Tarihi: " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+            <DatePicker Name="k_giris_tarihi" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="24" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030" />
+        </Grid>
+        <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="101*"/>
+                <ColumnDefinition Width="34*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Çıkış Tarihi: " Width="110" Margin="0,0,92,0" Foreground="Black" FontWeight="Normal"/>
+            <DatePicker Name="k_cikis_tarihi" Background="{x:Null}" Margin="110,2,0,0" Width="160" Height="24" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030" Grid.ColumnSpan="2" />
+        </Grid>
+        <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+            <Label Content="Adres : " Width="110" Margin="0,0,160,0" Foreground="Black" FontWeight="Normal"/>
+            <TextBox Name="k_adres" Background="{x:Null}" Margin="110,-0,-0,-0" Width="160" Height="18" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030"/>
+        </Grid>
+        <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="270"  Margin="15,10,-0,-0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="133*"/>
+                <ColumnDefinition Width="137*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Açıklama: " Width="150" Margin="0,0,23,0" Foreground="Black" FontWeight="Normal"/>
+            <RichTextBox Name="k_aciklama" Background="{x:Null}" Margin="110,0,0,0" Width="200" Height="250" Foreground="Black" BorderThickness="0,0,0,1" BorderBrush="#FF313030" Grid.ColumnSpan="2"/>
+
+        </Grid>
+        <Button Name="kaydet" Width="220" Height="25" Margin="-215,50,0,0" Content="Kaydet" Background="{x:Null}" BorderThickness="0,0,0,3" BorderBrush="#FF2B66DC" Foreground="#FF0C0C0C" Click="kaydet_Click" ></Button>
+    </WrapPanel>
+
+</Window>
