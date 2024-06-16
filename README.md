@@ -15,3 +15,6 @@ Bu proje, bir otelin müşterilerini ve rezervasyonlarını takip etmek için C#
 - Mevcut rezervasyonları listeleme
 - Oda durumunu kontrol etme
 - Gelir gider durumu
+
+
+Kullanım SQL bağlantı bilgisi gerekmektedir. erennunluu@gmail.com
