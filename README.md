@@ -17,4 +17,4 @@ Bu proje, bir otelin müşterilerini ve rezervasyonlarını takip etmek için C#
 - Gelir gider durumu
 
 
-Kullanım SQL bağlantı bilgisi gerekmektedir. erennunluu@gmail.com
+Kullanım SQL bağlantı bilgisi gerekmektedir. erennunluu@gmail.com  / Ticari olarak kullanılma potansiyeli olan hesaplara geri dönüş yapılmaz.
